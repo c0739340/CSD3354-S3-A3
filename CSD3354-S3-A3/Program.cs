@@ -33,13 +33,6 @@ namespace CSD3354_S3_A3
 
             Stack dataStack = getDataInStack(dataQueue);
             LinkedList<String> dataList = getDataLinkedList(dataStack);
-
-            Console.WriteLine("Printing Data from LinkedList before sorting");
-            foreach (string str in dataList)
-            {
-                Console.WriteLine(str);
-
-            }
             var orderedList = new List<String>();
             orderedList.AddRange(dataList);
             orderedList.Sort();
@@ -57,12 +50,10 @@ namespace CSD3354_S3_A3
         public Stack getDataInStack(Queue dataQueue)
         {
             Stack dataStack = new Stack();
-            Console.WriteLine("Printing Data from Queue(FIFO) and entering in stack");
             foreach (Object obj in dataQueue)
             {
 
                 dataStack.Push(obj);
-                Console.WriteLine(obj);
 
             }
             return dataStack;
@@ -71,11 +62,9 @@ namespace CSD3354_S3_A3
         public LinkedList<string> getDataLinkedList(Stack dataStack)
         {
             LinkedList<String> dataList = new LinkedList<String>();
-            Console.WriteLine("Printing Data from Stack(LIFO) and entering in LinkedList");
             foreach (string str in dataStack)
             {
                 dataList.AddLast(str);
-                Console.WriteLine(str);
                
             }
             return dataList;

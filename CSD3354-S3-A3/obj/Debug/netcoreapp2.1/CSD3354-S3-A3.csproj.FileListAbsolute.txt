@@ -1,0 +1,11 @@
+C:\C#ClassStuff\July10ReadData\CSD3354-S3-A3\CSD3354-S3-A3\bin\Debug\netcoreapp2.1\CSD3354-S3-A3.deps.json
+C:\C#ClassStuff\July10ReadData\CSD3354-S3-A3\CSD3354-S3-A3\bin\Debug\netcoreapp2.1\CSD3354-S3-A3.runtimeconfig.json
+C:\C#ClassStuff\July10ReadData\CSD3354-S3-A3\CSD3354-S3-A3\bin\Debug\netcoreapp2.1\CSD3354-S3-A3.runtimeconfig.dev.json
+C:\C#ClassStuff\July10ReadData\CSD3354-S3-A3\CSD3354-S3-A3\bin\Debug\netcoreapp2.1\CSD3354-S3-A3.dll
+C:\C#ClassStuff\July10ReadData\CSD3354-S3-A3\CSD3354-S3-A3\bin\Debug\netcoreapp2.1\CSD3354-S3-A3.pdb
+C:\C#ClassStuff\July10ReadData\CSD3354-S3-A3\CSD3354-S3-A3\obj\Debug\netcoreapp2.1\CSD3354-S3-A3.csprojAssemblyReference.cache
+C:\C#ClassStuff\July10ReadData\CSD3354-S3-A3\CSD3354-S3-A3\obj\Debug\netcoreapp2.1\CSD3354-S3-A3.csproj.CoreCompileInputs.cache
+C:\C#ClassStuff\July10ReadData\CSD3354-S3-A3\CSD3354-S3-A3\obj\Debug\netcoreapp2.1\CSD3354-S3-A3.AssemblyInfoInputs.cache
+C:\C#ClassStuff\July10ReadData\CSD3354-S3-A3\CSD3354-S3-A3\obj\Debug\netcoreapp2.1\CSD3354-S3-A3.AssemblyInfo.cs
+C:\C#ClassStuff\July10ReadData\CSD3354-S3-A3\CSD3354-S3-A3\obj\Debug\netcoreapp2.1\CSD3354-S3-A3.dll
+C:\C#ClassStuff\July10ReadData\CSD3354-S3-A3\CSD3354-S3-A3\obj\Debug\netcoreapp2.1\CSD3354-S3-A3.pdb

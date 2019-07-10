@@ -20,8 +20,6 @@ namespace CSD3354_S3_A3
         {
             string path = "C:/C#ClassStuff/July10ReadData/CSD3354-S3-A3/CSD3354-S3-A3/DataContainer.txt";
             Queue dataQueue = new Queue();
-            Stack dataStack = new Stack();
-            LinkedList<String> dataList = new LinkedList<String>();
             using (StreamReader sr = File.OpenText(path))
             {
                 String s = "";
@@ -29,39 +27,25 @@ namespace CSD3354_S3_A3
                 while ((s = sr.ReadLine()) != null)
                 {
                     dataQueue.Enqueue(s);
-                    
+
                 }
             }
 
-            Console.WriteLine("Printing Data from Queue(FIFO) and entering in stack");
-            foreach (Object obj in dataQueue)
-            {
+            Stack dataStack = getDataInStack(dataQueue);
+            LinkedList<String> dataList = getDataLinkedList(dataStack);
 
-                dataStack.Push(obj);
-                Console.WriteLine(obj);
-                
-            }
-
-            Console.WriteLine("Printing Data from Stack(LIFO) and entering in LinkedList");
-            foreach (string str in dataStack)
-            {
-                dataList.AddLast(str);
-                Console.WriteLine(str);
-               
-            }
             Console.WriteLine("Printing Data from LinkedList before sorting");
             foreach (string str in dataList)
             {
-                //dataList.AddLast(str);
                 Console.WriteLine(str);
 
             }
-            var nameList = new List<String>();
-            nameList.AddRange(dataList);
-            nameList.Sort();
+            var orderedList = new List<String>();
+            orderedList.AddRange(dataList);
+            orderedList.Sort();
 
             Console.WriteLine("Printing Data from LinkedList after sorting");
-            foreach (string str in nameList)
+            foreach (string str in orderedList)
             {
                 Console.WriteLine(str);
 
@@ -69,6 +53,33 @@ namespace CSD3354_S3_A3
 
             Console.ReadKey();
         }
-        
+
+        public Stack getDataInStack(Queue dataQueue)
+        {
+            Stack dataStack = new Stack();
+            Console.WriteLine("Printing Data from Queue(FIFO) and entering in stack");
+            foreach (Object obj in dataQueue)
+            {
+
+                dataStack.Push(obj);
+                Console.WriteLine(obj);
+
+            }
+            return dataStack;
+        }
+
+        public LinkedList<string> getDataLinkedList(Stack dataStack)
+        {
+            LinkedList<String> dataList = new LinkedList<String>();
+            Console.WriteLine("Printing Data from Stack(LIFO) and entering in LinkedList");
+            foreach (string str in dataStack)
+            {
+                dataList.AddLast(str);
+                Console.WriteLine(str);
+               
+            }
+            return dataList;
+}
     }
+
 }
